@@ -31,7 +31,7 @@
     <div id="main-wrapper">
         <!-- Accueil -->
         <div id="accueil">
-            <h2>Bienvenue sur mon site</h2>
+            <h2>Bienvenue !</h2>
             <p><img src="public/img/lraccueil.webp" alt="Photo du Vieux Port de La Rochelle" /></p>
             <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -43,6 +43,8 @@
                 sed rhoncus sapien nunc eget.
             </p>
         </div>
+
+        <!-- Portfolio -->
         <div id="portfolio">
             <h2>Portfolio</h2>
             <div class="elements">
@@ -131,6 +133,34 @@
                         </p>
                     </div>
                 </a>
+            </div>
+        </div>
+
+        <!-- Contact -->
+        <div id="contact">
+            <h2>Contact</h2>
+            <div class="formucontact">
+                <h3>Contactez-moi</h3>
+                <form action="contact" method="post">
+                    <div class="form-group">
+                        <label for="nom">Votre nom/prénom ou nom de votre entité</label>
+                        <input type="text" class="form-control" id="nom" name="nom" placeholder="Votre nom" />
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Votre Email (afin que je puisse vous contacter)</label>
+                        <input type="email" class="form-control" id="email" name="email" placeholder="Votre email" />
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Vous voulez passer commande ? <br /> Une petite recommandation ? <br />
+                            Un petit problème
+                            ? C’est par ici. Détaillez le tout, <br /> je m’occuperais de vous !</label>
+                        <textarea class="form-control" id="message" name="message" rows="3"
+                            placeholder="Votre message"></textarea>
+                    </div>
+                    <button type="submit" class="btn">Envoyer les informations</button>
+            </div>
+            <div class="réseauxcontact">
+
             </div>
         </div>
     </div>
