@@ -1,19 +1,28 @@
-/* @import "./utils/variables";
-@import "./utils/functions";
-@import "./utils/mixins";
-@import "./utils/extensions";
-
-@import "./base/base";
-@import "./base/typography";
-
-@import "./components/buttons";
-
-@import "./layout/header";
-@import "./layout/nav";
-@import "./layout/container";
-@import "./layout/form";
+/* DOSSIER BASE */
+@import "./Base/reset";
+@import "./Base/typography";
 
 
-@import "./pages/work";
-@import "./pages/about";
-@import "./pages/project"; */
+/* DOSSIER COMPONENTS */
+@import "./Components/buttons";
+@import "./Components/carousel";
+@import "./Components/cover";
+@import "./Components/dropdown";
+
+
+/* DOSSIER LAYOUTS */
+@import "./Layout/header";
+@import "./Layout/footer";
+
+
+/* DOSSIER PAGES*/
+@import "./Pages/accueil";
+@import "./Pages/portfolio";
+@import "./Pages/contact";
+
+
+/* DOSSIER UTILS */
+@import "./Utils/variables";
+@import "./Utils/mixins";
+@import "./Utils/functions";
+@import "./Utils/keyframes";

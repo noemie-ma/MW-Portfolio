@@ -1,11 +1,21 @@
 {
   "name": "frontend",
   "version": "1.0.0",
-  "description": "",
+  "description": "Mon portfolio",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "sass": "sass --watch ./sass/main.scss:./public/css/styles.css --style compressed",
+    "prefix": "postcss ./public/css/styles.css --use autoprefixer -d ./public/css/prefixed/ --style compressed"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/noemie-ma/MW-Portfolio.git"
   },
   "author": "Noémie",
-  "license": "ISC"
+  "license": "ISC",
+  "browserslist": "last 4 versions",
+  "bugs": {
+    "url": "https://github.com/noemie-ma/MW-Portfolio/issues"
+  },
+  "homepage": "https://github.com/noemie-ma/MW-Portfolio#readme"
 }
