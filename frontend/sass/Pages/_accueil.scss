@@ -1,0 +1,39 @@
+#main-wrapper {
+  background-color: $backgroundpage;
+}
+
+/* ACCUEIL */
+#accueil {
+  h2 {
+    @include titles;
+    font-weight: normal;
+    font-size: $xxlarge;
+    text-align: center;
+    padding: 20px;
+  }
+  .contenuaccueil {
+    @include flex-row;
+    gap: 35px;
+
+    img {
+      width: 55%;
+      height: 520px;
+    }
+
+    p {
+      font-size: $small;
+      font-family: $barlow;
+      @include flex-column;
+      gap: 20px;
+      justify-content: center;
+      text-align: center;
+
+      span {
+        font-family: $cookie;
+        font-size: $large;
+        color: $titles;
+        text-align: center;
+      }
+    }
+  }
+}
