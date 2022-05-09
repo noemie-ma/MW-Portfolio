@@ -1,1 +1,27 @@
 /* FORMULAIRE DE CONTACT */
+#contact {
+  //@include flex-row;
+
+  h2 {
+    @include titles;
+  }
+
+  .box-contact {
+    @include flex-row;
+    font-family: $barlow;
+
+    .formucontact {
+      @include flex-column;
+    }
+
+    form {
+      @include flex-column;
+    }
+    .reseauxcontact {
+      @include flex-column;
+      .logo-rs {
+        width: 50px;
+      }
+    }
+  }
+}
