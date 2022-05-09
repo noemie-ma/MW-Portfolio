@@ -6,7 +6,6 @@
 #accueil {
   h2 {
     @include titles;
-    font-weight: normal;
     font-size: $xxlarge;
     text-align: center;
     padding: 20px;
