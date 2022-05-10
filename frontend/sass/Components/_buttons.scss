@@ -1,0 +1,17 @@
+/* BOUTONS */
+.btn {
+    @include flex-row;
+    border: none;
+    background-color: inherit;
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+    display: inline-block;
+    color: $white;
+    align-self: center;
+}
+
+.btn:hover {
+    background-color: $white;
+    color: $azurblue;
+}

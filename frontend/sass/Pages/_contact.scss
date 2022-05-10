@@ -1,26 +1,124 @@
 /* FORMULAIRE DE CONTACT */
 #contact {
-  //@include flex-row;
+  @include flex-column;
+  padding: 10px 10px;
+  gap: 20px;
+
+  a {
+    color: $white;
+    @include flex-column;
+    gap: 10px;
+  }
 
   h2 {
     @include titles;
+    text-align: center;
+  }
+
+  h3 {
+    text-align: center;
+    font-weight: normal;
+    font-family: $cookie;
+    font-size: 32px;
   }
 
   .box-contact {
     @include flex-row;
     font-family: $barlow;
+    color: $white;
+    padding: 0px 60px 0px 60px;
+    gap: 120px;
 
     .formucontact {
       @include flex-column;
+      background-color: $azurblue;
+      width: 50%;
+      padding: 10px;
+      align-items: center;
+      gap: 20px;
     }
 
     form {
       @include flex-column;
+      //align-items: center;
+      gap: 12px;
+      align-items: flex-end;
+
+      .form-group {
+        @include flex-row;
+        gap: 20px;
+      }
+
+      input {
+        width: 75%;
+        height: 25px;
+      }
+
+      textarea {
+        width: 75%;
+        height: 190px;
+      }
     }
+
     .reseauxcontact {
       @include flex-column;
+      background-color: $azurblue;
+      width: 50%;
+      gap: 40px;
+      padding: 10px;
+
+      p {
+        text-align: center;
+        font-weight: bold;
+      }
+
       .logo-rs {
-        width: 50px;
+        width: 30%;
+        @include flex-row;
+        gap: 12px;
+        align-self: center;
+      }
+
+      .grosboutons {
+        @include flex-row;
+        gap: 40px;
+      }
+
+      .box-links {
+        width: 30%;
+        height: 130px;
+        display: flex;
+        flex-direction: row;
+        align-self: center;
+        padding: 5px;
+
+        a:hover {
+          background-color: $white;
+          color: $bluesky;
+          border-radius: 20px;
+          height: 129px;
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          align-self: center;
+        }
+
+        p {
+          @include flex-row;
+          align-items: baseline;
+          justify-content: space-around;
+          font-size: 13px;
+
+          img {
+
+            width: 42px;
+            height: 42px;
+            display: flex;
+            flex-direction: column;
+            align-self: center;
+
+          }
+        }
       }
     }
   }
