@@ -5,9 +5,13 @@ footer {
     height: 100px;
     color: $white;
     @include flex-row;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    padding: 0px 20px;
 
     .navfooter {
+        @include flex-column;
+        gap: 8px;
+
         nav {
             a {
                 color: $white;
@@ -31,19 +35,14 @@ footer {
         text-align: center;
     }
 
-    .competences {
+    .linktree {
         @include flex-column;
-
-        .logo-competences {
-            @include flex-column;
-
-            .front1 img {
-                width: 12%;
-            }
-        }
+        width: 10%;
+        align-items: flex-end;
+        gap: 2px;
 
         img {
-            width: 50px;
+            width: 62%;
         }
     }
 }
