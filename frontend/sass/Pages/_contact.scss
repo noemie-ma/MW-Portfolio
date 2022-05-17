@@ -1,122 +1,376 @@
 /* FORMULAIRE DE CONTACT */
-#contact {
-  @include flex-column;
-  padding: 10px;
-  gap: 20px;
-
-  a {
-    color: $white;
+@media all and (max-width: 544px) {
+  #contact {
     @include flex-column;
-    gap: 10px;
-  }
+    padding: 10px;
+    gap: 20px;
 
-  h2 {
-    @include titles;
-    text-align: center;
-  }
-
-  h3 {
-    text-align: center;
-    font-weight: normal;
-    font-family: $cookie;
-    font-size: 32px;
-  }
-
-  .box-contact {
-    @include flex-column;
-    font-family: $barlow;
-    color: $white;
-    padding: 0px 60px 0px 60px;
-    gap: 50px;
-
-    .formucontact {
+    a {
+      color: $white;
       @include flex-column;
-      background-color: $azurblue;
-      width: 100%;
-      padding: 10px;
-      align-items: center;
-      gap: 20px;
+      gap: 10px;
     }
 
-    form {
-      @include flex-column;
-      //align-items: center;
-      gap: 12px;
-      align-items: flex-end;
+    h2 {
+      @include titles;
+      text-align: center;
+    }
 
-      .form-group {
-        @include flex-row;
+    h3 {
+      text-align: center;
+      font-weight: normal;
+      font-family: $cookie;
+      font-size: 32px;
+    }
+
+    .box-contact {
+      @include flex-column;
+      font-family: $barlow;
+      color: $white;
+      gap: 50px;
+
+      .formucontact {
+        @include flex-column;
+        background-color: $azurblue;
+        width: 100%;
+        padding: 10px;
+        align-items: center;
         gap: 20px;
       }
 
-      input {
-        width: 75%;
-        height: 25px;
-      }
-
-      textarea {
-        width: 75%;
-        height: 190px;
-      }
-    }
-
-    .reseauxcontact {
-      @include flex-column;
-      background-color: $azurblue;
-      width: 100%;
-      gap: 40px;
-      padding: 10px;
-
-      p {
-        text-align: center;
-        font-weight: bold;
-      }
-
-      .logo-rs {
-        width: 30%;
-        @include flex-row;
+      form {
+        @include flex-column;
+        //align-items: center;
         gap: 12px;
-        align-self: center;
+        align-items: flex-end;
+
+        .form-group {
+          @include flex-row;
+          gap: 20px;
+        }
+
+        input {
+          width: 100%;
+          height: 25px;
+        }
+
+        textarea {
+          width: 100%;
+          height: 155px;
+        }
       }
 
-      .grosboutons {
-        @include flex-row;
-        gap: 40px;
-      }
-
-      .box-links {
-        width: 30%;
-        height: 130px;
-        display: flex;
-        flex-direction: row;
-        align-self: center;
+      .reseauxcontact {
+        @include flex-column;
+        background-color: $azurblue;
+        width: 100%;
+        gap: 15px;
         padding: 5px;
 
-        a:hover {
-          background-color: $white;
-          color: $bluesky;
-          border-radius: 20px;
-          height: 129px;
-          width: 100%;
-          display: flex;
-          flex-direction: column;
+        p {
+          text-align: center;
+          font-weight: bold;
+        }
+
+        .logo-rs {
+          width: 15%;
+          @include flex-column;
+          gap: 12px;
           align-self: center;
         }
 
-        p {
-          @include flex-row;
-          align-items: baseline;
-          justify-content: space-around;
-          font-size: 13px;
+        .grosboutons {
+          @include flex-column;
+          gap: 40px;
+        }
 
-          img {
+        .box-links {
+          width: 30%;
+          height: 130px;
+          display: flex;
+          flex-direction: row;
+          align-self: center;
 
-            width: 42px;
-            height: 42px;
+          a:hover {
+            background-color: $white;
+            color: $bluesky;
+            border-radius: 20px;
+            height: 129px;
+            width: 100%;
             display: flex;
             flex-direction: column;
             align-self: center;
+          }
 
+          p {
+            @include flex-row;
+            align-items: baseline;
+            justify-content: space-around;
+            font-size: 12px;
+
+            img {
+
+              width: 42px;
+              height: 42px;
+              display: flex;
+              flex-direction: column;
+              align-self: center;
+
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media all and (min-width: 545px) and (max-width:768px) {
+  #contact {
+    @include flex-column;
+    padding: 10px;
+    gap: 20px;
+
+    a {
+      color: $white;
+      @include flex-column;
+      gap: 10px;
+    }
+
+    h2 {
+      @include titles;
+      text-align: center;
+    }
+
+    h3 {
+      text-align: center;
+      font-weight: normal;
+      font-family: $cookie;
+      font-size: 32px;
+    }
+
+    .box-contact {
+      @include flex-column;
+      font-family: $barlow;
+      color: $white;
+      padding: 0px 60px 0px 60px;
+      gap: 50px;
+
+      .formucontact {
+        @include flex-column;
+        background-color: $azurblue;
+        width: 100%;
+        padding: 10px;
+        align-items: center;
+        gap: 20px;
+      }
+
+      form {
+        @include flex-column;
+        //align-items: center;
+        gap: 12px;
+        align-items: flex-end;
+
+        .form-group {
+          @include flex-row;
+          gap: 20px;
+        }
+
+        input {
+          width: 75%;
+          height: 25px;
+        }
+
+        textarea {
+          width: 75%;
+          height: 190px;
+        }
+      }
+
+      .reseauxcontact {
+        @include flex-column;
+        background-color: $azurblue;
+        width: 100%;
+        gap: 40px;
+        padding: 10px;
+
+        p {
+          text-align: center;
+          font-weight: bold;
+        }
+
+        .logo-rs {
+          width: 30%;
+          @include flex-row;
+          gap: 12px;
+          align-self: center;
+        }
+
+        .grosboutons {
+          @include flex-row;
+          gap: 40px;
+        }
+
+        .box-links {
+          width: 30%;
+          height: 130px;
+          display: flex;
+          flex-direction: row;
+          align-self: center;
+          padding: 5px;
+
+          a:hover {
+            background-color: $white;
+            color: $bluesky;
+            border-radius: 20px;
+            height: 129px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-self: center;
+          }
+
+          p {
+            @include flex-row;
+            align-items: baseline;
+            justify-content: space-around;
+            font-size: 13px;
+
+            img {
+
+              width: 42px;
+              height: 42px;
+              display: flex;
+              flex-direction: column;
+              align-self: center;
+
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media all and (min-width: 769px) {
+  #contact {
+    @include flex-column;
+    padding: 10px;
+    gap: 20px;
+
+    a {
+      color: $white;
+      @include flex-column;
+      gap: 10px;
+    }
+
+    h2 {
+      @include titles;
+      text-align: center;
+    }
+
+    h3 {
+      text-align: center;
+      font-weight: normal;
+      font-family: $cookie;
+      font-size: 32px;
+    }
+
+    .box-contact {
+      @include flex-column;
+      font-family: $barlow;
+      color: $white;
+      padding: 0px 60px 0px 60px;
+      gap: 50px;
+
+      .formucontact {
+        @include flex-column;
+        background-color: $azurblue;
+        width: 100%;
+        padding: 10px;
+        align-items: center;
+        gap: 20px;
+      }
+
+      form {
+        @include flex-column;
+        //align-items: center;
+        gap: 12px;
+        align-items: flex-end;
+
+        .form-group {
+          @include flex-row;
+          gap: 20px;
+        }
+
+        input {
+          width: 75%;
+          height: 25px;
+        }
+
+        textarea {
+          width: 75%;
+          height: 190px;
+        }
+      }
+
+      .reseauxcontact {
+        @include flex-column;
+        background-color: $azurblue;
+        width: 100%;
+        gap: 40px;
+        padding: 10px;
+
+        p {
+          text-align: center;
+          font-weight: bold;
+        }
+
+        .logo-rs {
+          width: 30%;
+          @include flex-row;
+          gap: 12px;
+          align-self: center;
+        }
+
+        .grosboutons {
+          @include flex-row;
+          gap: 40px;
+        }
+
+        .box-links {
+          width: 30%;
+          height: 130px;
+          display: flex;
+          flex-direction: row;
+          align-self: center;
+          padding: 5px;
+
+          a:hover {
+            background-color: $white;
+            color: $bluesky;
+            border-radius: 20px;
+            height: 129px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-self: center;
+          }
+
+          p {
+            @include flex-row;
+            align-items: baseline;
+            justify-content: space-around;
+            font-size: 13px;
+
+            img {
+
+              width: 42px;
+              height: 42px;
+              display: flex;
+              flex-direction: column;
+              align-self: center;
+
+            }
           }
         }
       }
