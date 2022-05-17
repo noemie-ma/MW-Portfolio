@@ -8,7 +8,7 @@
           <div class="siteweb">
             <div class="imgsite">
               <img
-                src="components/img/reservia.webp"
+                src="/img/reservia.webp"
                 alt="Capture d'écran du site web de Réservia"
               />
             </div>

@@ -3,10 +3,7 @@
   <div id="accueil">
     <h2>Bienvenue !</h2>
     <div class="contenuaccueil">
-      <img
-        src="public/img/lraccueil.webp"
-        alt="Photo du Vieux Port de La Rochelle"
-      />
+      <img src="/img/lraccueil.webp" alt="Photo du Vieux Port de La Rochelle" />
       <p>
         <span
           >Bonjour et merci beaucoup d'être ici et d'explorer mon

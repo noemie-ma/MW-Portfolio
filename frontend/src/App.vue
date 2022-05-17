@@ -2,7 +2,7 @@
   <div id="App">
     <header>
       <div id="logo">
-        <img src="components/img/nm-logo.webp" alt="logo" />
+        <img src="/img/nm-logo.webp" alt="logo" />
       </div>
       <div id="titre">
         <h1>Noémie - Développeuse Web</h1>
@@ -41,7 +41,7 @@
       </div>
       <div class="linktree">
         <h2>Mon Linktree</h2>
-        <img src="components/img/noemiedevweb.webp" alt="qr-code linktree" />
+        <img src="/img/noemiedevweb.webp" alt="qr-code linktree" />
       </div>
     </footer>
   </div>
