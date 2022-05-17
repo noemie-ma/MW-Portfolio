@@ -1,11 +1,19 @@
 {
   "name": "frontend",
-  "version": "1.0.0",
-  "description": "Mon portfolio",
-  "main": "index.js",
+  "version": "0.0.0",
   "scripts": {
+    "serve": "vite",
+    "build": "vite build",
+    "preview": "vite preview --port 5050",
     "sass": "sass --watch ./sass/main.scss:./public/css/styles.css --style compressed",
     "prefix": "postcss ./public/css/styles.css --use autoprefixer -d ./public/css/prefixed/ --style compressed"
+  },
+  "dependencies": {
+    "vue": "^3.2.33"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^2.3.1",
+    "vite": "^2.9.5"
   },
   "repository": {
     "type": "git",

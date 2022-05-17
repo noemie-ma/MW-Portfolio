@@ -1,48 +1,104 @@
-footer {
-    background-color: $azurblue;
-    font-family: $barlow;
-    width: 100%;
-    height: 100px;
-    color: $white;
-    @include flex-row;
-    justify-content: space-between;
-    padding: 0px 20px;
-
-    .navfooter {
+@media all and (max-width: 755px) {
+    footer {
+        background-color: #1599b0;
+        font-family: "barlow", sans-serif;
+        width: 100%;
+        height: 355px;
+        color: #fff;
         @include flex-column;
-        gap: 8px;
+        justify-content: space-between;
+        padding: 0px 20px;
+        align-items: center;
+        gap: 25px;
 
-        nav {
-            a {
-                color: $white;
+        .navfooter {
+            @include flex-column;
+            gap: 8px;
+
+            nav {
+                a {
+                    color: $white;
+                }
+
+                ul {
+                    list-style: none;
+                    @include flex-column;
+                    width: 5%;
+                }
             }
+        }
 
-            ul {
-                list-style: none;
-                @include flex-column;
-                width: 5%;
+        .copyright {
+            display: flex;
+            flex-direction: column;
+            align-self: center;
+        }
+
+        p {
+            text-align: center;
+        }
+
+        .linktree {
+            display: flex;
+            flex-direction: column;
+            width: 90%;
+            align-items: center;
+            gap: 2px;
+
+            img {
+                width: 50%;
             }
         }
     }
+}
 
-    .copyright {
-        display: flex;
-        flex-direction: column;
-        align-self: center;
-    }
+@media all and (max-width:756px) {
+    footer {
+        background-color: $azurblue;
+        font-family: $barlow;
+        width: 100%;
+        height: 100px;
+        color: $white;
+        @include flex-row;
+        justify-content: space-between;
+        padding: 0px 20px;
 
-    p {
-        text-align: center;
-    }
+        .navfooter {
+            @include flex-column;
+            gap: 8px;
 
-    .linktree {
-        @include flex-column;
-        width: 10%;
-        align-items: flex-end;
-        gap: 2px;
+            nav {
+                a {
+                    color: $white;
+                }
 
-        img {
-            width: 62%;
+                ul {
+                    list-style: none;
+                    @include flex-column;
+                    width: 5%;
+                }
+            }
+        }
+
+        .copyright {
+            display: flex;
+            flex-direction: column;
+            align-self: center;
+        }
+
+        p {
+            text-align: center;
+        }
+
+        .linktree {
+            @include flex-column;
+            width: 10%;
+            align-items: flex-end;
+            gap: 2px;
+
+            img {
+                width: 62%;
+            }
         }
     }
 }

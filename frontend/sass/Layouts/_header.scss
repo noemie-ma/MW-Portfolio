@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  position: relative;
 }
 
 a {
@@ -8,16 +9,16 @@ a {
 
 /* En-tête de la page */
 header {
-  @include flex-row;
+  display: flex;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  background-color: $azurblue;
-  height: 95px;
+  background-color: #1599b0;
+  height: 260px;
   width: 100%;
-  padding: 15px;
-  font-family: $cookie;
-  font-size: $xxlarge;
-  color: $white;
+  font-family: "cookie", serif;
+  font-size: 35px;
+  color: #fff;
 
   #logo {
     img {
@@ -36,16 +37,36 @@ header {
     a {
       color: $white;
     }
-    a:hover {
-      color: $white;
-      border-top: 3px solid $white;
-      padding-top: 25px;
-    }
+
     ul {
       list-style: none;
       display: flex;
       flex-direction: row;
       gap: 30px;
+    }
+  }
+}
+
+@media all and (min-width: 769px) {
+  header {
+    @include flex-row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $azurblue;
+    height: 95px;
+    width: 100%;
+    padding: 15px;
+    font-family: $cookie;
+    font-size: $xxlarge;
+    color: $white;
+
+    nav {
+
+      a:hover {
+        color: $white;
+        border-top: 3px solid $white;
+        padding-top: 25px;
+      }
     }
   }
 }

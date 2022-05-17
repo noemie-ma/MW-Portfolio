@@ -23,16 +23,16 @@
   }
 
   .box-contact {
-    @include flex-row;
+    @include flex-column;
     font-family: $barlow;
     color: $white;
     padding: 0px 60px 0px 60px;
-    gap: 120px;
+    gap: 50px;
 
     .formucontact {
       @include flex-column;
       background-color: $azurblue;
-      width: 50%;
+      width: 100%;
       padding: 10px;
       align-items: center;
       gap: 20px;
@@ -63,7 +63,7 @@
     .reseauxcontact {
       @include flex-column;
       background-color: $azurblue;
-      width: 50%;
+      width: 100%;
       gap: 40px;
       padding: 10px;
 
