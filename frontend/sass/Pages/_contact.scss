@@ -254,7 +254,7 @@
 @media all and (min-width: 769px) {
   #contact {
     @include flex-column;
-    padding: 10px;
+    padding: 20px 0px;
     gap: 20px;
 
     a {
@@ -276,7 +276,7 @@
     }
 
     .box-contact {
-      @include flex-column;
+      @include flex-row;
       font-family: $barlow;
       color: $white;
       padding: 0px 60px 0px 60px;

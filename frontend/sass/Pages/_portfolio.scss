@@ -42,8 +42,6 @@
     }
 
     .siteweb {
-      background-color: $azurblue;
-
       img {
         @include capture-ecran;
       }
@@ -68,6 +66,7 @@
 
     .pres-siteweb:hover {
       background-color: $bluesky;
+      font-weight: bold;
       cursor: pointer;
     }
   }
@@ -88,7 +87,7 @@
       flex-wrap: wrap;
       justify-content: center;
       gap: 30px;
-      width: 50%;
+      width: 80%;
       align-self: center;
     }
 
@@ -116,8 +115,6 @@
     }
 
     .siteweb {
-      background-color: $azurblue;
-
       img {
         @include capture-ecran;
       }
@@ -186,8 +183,6 @@
     }
 
     .siteweb {
-      background-color: $azurblue;
-
       img {
         @include capture-ecran;
       }

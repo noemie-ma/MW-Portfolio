@@ -46,7 +46,7 @@
             gap: 2px;
 
             img {
-                width: 45%;
+                width: 25%;
             }
         }
     }
@@ -57,7 +57,7 @@
         background-color: $azurblue;
         font-family: $barlow;
         width: 100%;
-        height: 145px;
+        height: 165px;
         color: $white;
         @include flex-row;
         justify-content: space-between;
@@ -97,7 +97,7 @@
             gap: 2px;
 
             img {
-                width: 100%;
+                width: 90%;
             }
         }
     }
